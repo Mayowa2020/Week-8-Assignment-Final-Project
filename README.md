@@ -33,7 +33,7 @@ CREATE TABLE statements
 Relationship constraints
 
 
-⚡ Notes
+## Notes
 
 1. All IDs are BIGINT (scales better than INT for large datasets).
 
@@ -44,3 +44,24 @@ Relationship constraints
 4. cost, retail_price, and sale_price use DECIMAL(10,2) for money precision.
 
 5. email in users is UNIQUE.
+
+
+## ✅ Key points
+
+-- All foreign key constraints are defined inside the CREATE TABLE statements.
+
+-- The order of creation is important:
+
+-- users, distribution_centers →
+
+-- products (depends on distribution_centers) →
+
+-- orders (depends on users) →
+
+-- order_items (depends on orders, users, products) →
+
+-- inventory_items (depends on products) →
+
+-- events (depends on users).
+
+-- This ensures you won’t hit dependency errors when running the script.
