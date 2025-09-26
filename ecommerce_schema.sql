@@ -1,6 +1,6 @@
 -- SQL DDL script to create tables for an e-commerce database
 
--- CREATE DATABASE joyeuxshoppers_db;
+-- CREATE DATABASE ecommerce_db;
 CREATE DATABASE ecommerce_db;
 USE ecommerce_db;
 
@@ -21,7 +21,7 @@ CREATE TABLE users (
     latitude DECIMAL(9,6) NOT NULL,
     longitude DECIMAL(9,6) NOT NULL,
     traffic_source VARCHAR(100) NOT NULL,
-    created_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL
 );
 
 -- DISTRIBUTION CENTERS

@@ -4,11 +4,11 @@
 
 Question 1: Build a Complete Database Management System
 
-## Objective:
+## Objective
 
 Design and implement a full-featured relational database using MySQL.
 
-## Instructions:
+## Instructions
 
 Choose a real-world use case (e.g., Library Management, Student Records, Clinic Booking System, Inventory Tracking, E-commerce Store, etc.).
 
@@ -32,7 +32,6 @@ CREATE TABLE statements
 
 Relationship constraints
 
-
 ## Notes
 
 1. All IDs are BIGINT (scales better than INT for large datasets).
@@ -44,7 +43,6 @@ Relationship constraints
 4. cost, retail_price, and sale_price use DECIMAL(10,2) for money precision.
 
 5. email in users is UNIQUE.
-
 
 ## ✅ Key points
 
